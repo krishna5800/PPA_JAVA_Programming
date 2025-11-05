@@ -55,7 +55,7 @@ class MarvellousLogin implements ActionListener
     public void actionPerformed(ActionEvent aobj)
     {
         String uname = tobj.getText();
-        String pass = tobj.getText();
+        String pass  = new String(pobj.getPassword()).trim(); 
 
         if((uname.equals("Marvellous")) && (pass.equals("Marvellous@123")))
         {
